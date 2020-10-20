@@ -35,8 +35,6 @@ extension MenuViewController: UITableViewDataSource {
   }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print(indexPath.row)
-        
         if indexPath.row == 0 {
             
             let modalViewController = self.storyboard?.instantiateViewController(withIdentifier: "MainVC")
@@ -44,9 +42,6 @@ extension MenuViewController: UITableViewDataSource {
             if let vc = modalViewController {
                 navigationController?.pushViewController(vc, animated: true)
             }
-            
-//            self.performSegue(withIdentifier:"nextWelcome", sender: nil)
-            
         } else if indexPath.row == 1 {
             
             let modalViewController = self.storyboard?.instantiateViewController(withIdentifier: "ObjectView")

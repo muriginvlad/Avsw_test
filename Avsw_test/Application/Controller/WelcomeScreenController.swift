@@ -50,8 +50,6 @@ class WelcomeScreenController: UIViewController {
                             }
             })
             
-  // добавить переход
-            
         } else {
             welcomeLabel.text = "Данные введены неверно "
         }

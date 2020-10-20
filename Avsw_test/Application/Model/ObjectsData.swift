@@ -6,7 +6,7 @@
 //
 
 import Foundation
-
+import CoreData
 
 struct ObjectsData {
     let name: String
@@ -17,8 +17,8 @@ struct ObjectsData {
 
 class ObjectsInfo {
     static var shared = ObjectsInfo()
-    var objects: [ObjectsData] = []
-    var objectsEdit: ObjectsData? = nil
+    var objects: [NSManagedObject] = []
+    var objectsEdit: NSManagedObject? = nil
     var objectsEditIndex: Int? = nil
 }
 
