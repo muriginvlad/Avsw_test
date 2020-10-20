@@ -104,9 +104,9 @@
 			isa = PBXGroup;
 			children = (
 				8664E2902538B13F000873A8 /* Main.storyboard */,
+				8664E2952538B142000873A8 /* LaunchScreen.storyboard */,
 				861D366D253DA66200A553E7 /* ObjectCell.swift */,
 				86FE3BFB2539A1FE001A0D41 /* CustomProgressBar.swift */,
-				8664E2952538B142000873A8 /* LaunchScreen.storyboard */,
 				8664E2B0253994FF000873A8 /* MenuCell.swift */,
 			);
 			path = View;
