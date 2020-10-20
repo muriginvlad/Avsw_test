@@ -83,7 +83,7 @@ class MainScreenController: UIViewController {
             
             stateLabel.text = "Контакт сохранен"
             
-            DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(3), execute: {
+            DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(1), execute: {
                 self.stateLabel.text = ""
             })
             

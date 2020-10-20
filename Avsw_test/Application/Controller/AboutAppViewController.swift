@@ -10,9 +10,6 @@ import UIKit
 
 class AboutAppViewController: UIViewController {
 
-    
-    var menuVC: MenuViewController!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
     }

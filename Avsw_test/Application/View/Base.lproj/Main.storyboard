@@ -53,10 +53,19 @@
                                     <constraint firstAttribute="height" constant="20" id="Z1v-UZ-W1t"/>
                                 </constraints>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xJ0-xN-MxE">
+                                <rect key="frame" x="100" y="770.5" width="214" height="81.5"/>
+                                <string key="text">ПОДСКАЗКА логин: test  пароль: test
+</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="xJ0-xN-MxE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="0Xd-Gi-jYg"/>
                             <constraint firstItem="rgo-yf-DKm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="B8E-JZ-ddL"/>
                             <constraint firstItem="6bp-wN-4u3" firstAttribute="top" secondItem="rgo-yf-DKm" secondAttribute="bottom" constant="100" id="Kxl-8u-Wur"/>
                             <constraint firstItem="9zI-f9-kZa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="M3A-fC-gLc"/>
@@ -64,10 +73,12 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6bp-wN-4u3" secondAttribute="trailing" constant="30" id="NEs-bO-4Ts"/>
                             <constraint firstItem="9zI-f9-kZa" firstAttribute="top" secondItem="hOj-CT-IUD" secondAttribute="bottom" constant="80" id="O3g-Y0-s4i"/>
                             <constraint firstItem="hOj-CT-IUD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TkU-hk-eNz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xJ0-xN-MxE" secondAttribute="trailing" constant="100" id="X6F-nd-dGz"/>
                             <constraint firstItem="kIg-Uv-cie" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cz3-DB-1VZ"/>
                             <constraint firstItem="hOj-CT-IUD" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="hJp-I9-0SB"/>
                             <constraint firstItem="kIg-Uv-cie" firstAttribute="top" secondItem="9zI-f9-kZa" secondAttribute="bottom" constant="30" id="iom-vP-dIi"/>
                             <constraint firstItem="rgo-yf-DKm" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ouU-UW-3XH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="xJ0-xN-MxE" secondAttribute="bottom" constant="10" id="vsY-bd-C4n"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="LYF-dG-QyJ"/>
@@ -184,15 +195,15 @@
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LUp-OM-gRm">
-                                        <rect key="frame" x="157.5" y="380" width="99" height="36"/>
+                                        <rect key="frame" x="157.5" y="362" width="99" height="36"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="Сохранить"/>
                                         <connections>
                                             <action selector="saveButton:" destination="uDe-jZ-tIF" eventType="touchUpInside" id="KBe-AC-RMF"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Контакт сохранен " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Q8-lo-QtJ">
-                                        <rect key="frame" x="10" y="302" width="394" height="18"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Q8-lo-QtJ">
+                                        <rect key="frame" x="10" y="302" width="394" height="0.0"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="highlightedColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
