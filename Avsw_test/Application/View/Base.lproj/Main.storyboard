@@ -259,7 +259,7 @@
             </objects>
             <point key="canvasLocation" x="4031.884057971015" y="67.633928571428569"/>
         </scene>
-        <!--Список-->
+        <!--СПИСОК-->
         <scene sceneID="RuM-W3-YF6">
             <objects>
                 <viewController storyboardIdentifier="ObjectView" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="sdC-hb-Ha4" customClass="ObjectViewController" customModule="Avsw_test" customModuleProvider="target" sceneMemberID="viewController">
@@ -328,7 +328,7 @@
                             <constraint firstItem="lzg-HF-cLK" firstAttribute="leading" secondItem="vEb-88-y6E" secondAttribute="leading" id="uA1-AA-YVd"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Список" id="hE9-Xp-k4E">
+                    <navigationItem key="navigationItem" title="СПИСОК" id="hE9-Xp-k4E">
                         <barButtonItem key="leftBarButtonItem" title="Назад" id="fPA-QT-eEi">
                             <connections>
                                 <action selector="backButton:" destination="sdC-hb-Ha4" id="uwp-tk-gkq"/>

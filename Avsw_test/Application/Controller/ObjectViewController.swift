@@ -56,14 +56,18 @@ extension ObjectViewController: UITableViewDelegate, UITableViewDataSource {
         
         let object = ObjectsInfo.shared.objects[indexPath.row]//ObjectsInfo.shared.objects[indexPath.row]
         
-        cell.nameLabel.text = object.value(forKey:"name") as? String //"ФИО: " + object.surname + " " + object.name
-        cell.optionalLabel.text = object.value(forKey:"optional") as? String //"Атрибуты: " + object.optional
+        let nameCell = object.value(forKey:"name") as? String
+        let surnameCell = object.value(forKey:"surname") as? String
+        let optionalCell = object.value(forKey:"optional") as? String
+        cell.nameLabel.text =  "ФИО: " + surnameCell! + " " + nameCell!
+        cell.optionalLabel.text = "Атрибуты: " + optionalCell!
         return cell
     }
     
     func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
         
         let deleteAction = UITableViewRowAction(style: .default, title: "Удалить"){ _,_  in
+            
             self.deleteData(ObjectsInfo.shared.objects[indexPath.row], at: indexPath.row)
             self.objectsTableView.reloadData()
         }
